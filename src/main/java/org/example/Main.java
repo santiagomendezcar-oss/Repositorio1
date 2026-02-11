@@ -1,21 +1,14 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-// crear una persona desde el constructor vacio
+        Persona1 persona1 = new Persona1("Juan", 35);
+        Persona2 persona2 = new Persona2("María", 28);
+        Persona3 persona3 = new Persona3("Pedro", 42);
 
-        Persona p1 = new Persona();
-        p1.setNombre("Juan");
-        p1.setEdad(26);
-        p1.setGenero("Masculino");
-
-        //crear constructor con todos los parametros
-        Persona p2 = new Persona("Juliana", 23, "Femenino");
-        //Mostrar persona
-        System.out.println(p1.toString());
-        System.out.println(p2.toString());
-
+        persona1.caminar();
+        persona2.caminar();
+        persona3.caminar();
     }
 }
